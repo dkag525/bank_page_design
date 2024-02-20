@@ -1,0 +1,82 @@
+.MiddleContainerSection{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Graph-Report-Container-middle-left{
+    /* border: 1px solid blue; */
+    width: 70%;
+}
+
+.Graph-Report-Body{
+    /* border: 1px solid magenta; */
+    /* width:45.625rem; */
+    width:100%;
+    height: 20.125rem;
+    border-radius: 1.5625rem;
+    background-color: white;
+    padding: 1.75rem 2.0625rem;
+}
+
+
+
+.Statics-Report{
+    /* border: 1px solid black; */
+    width: 28%;
+   
+}
+
+.Ellips-Section{
+    /* border: 1px solid green; */
+    /* margin-top: 1.75rem; */
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.875rem;
+    margin-bottom: 1.375rem;
+}
+
+.rightside-ellips{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.ellips-point{
+    width: .9375rem;
+    height: .9375rem;
+    border-radius: 50%;
+}
+
+.deposit-withdraw-status{
+    color: #718EBF;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.1344rem;
+}
+
+.Graph-Report{
+    /* border: 1px solid red; */
+    height: 14.125rem;
+}
+
+.Pie-Graph-Container {
+     /* border: 1px solid blue; */
+     height: 20.125rem;
+     width:21.875rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 1.5625rem;
+     background-color: white;
+}
+
+.Pie-Graph{
+    /* border: 1px solid black; */
+    width: 16.8206rem;    
+    height:16.2294rem;
+}

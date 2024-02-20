@@ -1,0 +1,10 @@
+.App {
+  /* border: 4px solid skyblue; */
+  display: flex;
+}
+
+.middle-container {
+  border: 1px solid grey;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+}

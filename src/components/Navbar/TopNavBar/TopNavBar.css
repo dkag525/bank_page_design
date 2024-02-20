@@ -1,0 +1,95 @@
+.navbar-container {
+  width: calc(100vw - 15.625rem);
+  height: 6.313rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topNavleft-container {
+  /* border: 1px solid green; */
+}
+
+.topNavright-container {
+  /* border: 1px solid darkmagenta; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.313rem;
+}
+
+.OverView {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 33.89px;
+}
+
+.InputSearch {
+  height: 3.125rem;
+  width: 15.938rem;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #f5f7fa;
+  gap: 1rem;
+}
+
+.search_icon {
+  width: 1.196rem;
+}
+
+.SerchBar {
+  background-color: #f5f7fa;
+  border-style: none;
+}
+
+.SerchBar:focus {
+  outline: none;
+}
+
+.SerchBar::placeholder {
+  color: #8ba3cb;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+
+.setting_icon {
+  /* border: 1px solid saddlebrown; */
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 3.125rem;
+}
+
+.bell_icon {
+  /* border: 1px solid saddlebrown; */
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 3.125rem;
+}
+
+.profile_picture {
+  width: 3.75rem;
+  height: 3.75rem;
+}

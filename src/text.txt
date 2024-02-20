@@ -1,0 +1,97 @@
+ <div className="middle-container-topSection">
+      <div className="ATM-Card-Section">
+        <div className="Head-Section">
+          <div className="Head-Section-left">
+            <h4 className="mycards inter primary-color">My Cards</h4>
+          </div>
+          <div className="Head-Section-right">
+            <h5 className="SeeAll inter primary-color">See All</h5>
+          </div>
+        </div>
+        <div className="ATM-Card-Parrent">
+          <div className="ATM-Card">
+            {AtmCardDetails.map((el, i) => {
+              return (
+                <div className="Complete-ATM-Card" key={i}>
+                  <div className="ATM-Card-1 primary-background">
+                    <div className="ATM-Card-Top-Sec">
+                      <div className="Balance-Sec lato">
+                        <div className="Balance">Balance</div>
+                        <div className="price">$5,756</div>
+                      </div>
+                      <div>
+                        <img
+                          className="Chip-Card_icon"
+                          src={Chip_Card}
+                          alt="Chip-Card_icon"
+                        />
+                      </div>
+                    </div>
+                    <div className="ATM-Card-mid-Sec lato">
+                      <div>
+                        <div className="Card-holder card-details">
+                          CARD HOLDER
+                        </div>
+                        <div className="Card-holder-name Crd-delails">
+                          Eddy Cusuma
+                        </div>
+                      </div>
+                      <div>
+                        <div className="Valid-Thru card-details">
+                          VALID THRU
+                        </div>
+                        <div className="Valid-date Crd-delails">12/22</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="ATM-Card-bottom-Sec">
+                    <div className="ATM-Card-Number lato">
+                      3778**** ****1234
+                    </div>
+                    <div className="circle_image">
+                      <img
+                        className="Circle_icon"
+                        src={Circle_icon}
+                        alt="Circle_icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="Recent-Transaction-Section">
+        <div className="Recent-Transaction inter mycards">
+          Recent-Transaction
+        </div>
+        <div className="Transaction-details">
+          {TranSactionDetails.map((TranSactionDetail, i) => {
+            return (
+              <div
+                className="TranHisFirst-sec inter TranHis"
+                key={TranSactionDetail.id}
+              >
+                <div className="Deposite_icon_1">
+                  <img src={TranSactionDetail.img} alt="Deposite_icon_1" />
+                </div>
+                <div className="tran-listRight">
+                  <div>
+                    <h4 className="recentHistory-details">
+                      {TranSactionDetail.depositeFrom}
+                    </h4>
+                    <h5 className="recentHistory-date inter secondary-color">
+                      {TranSactionDetail.depositeDate}
+                    </h5>
+                  </div>
+                  <div className="RecTranHisAmount">
+                    {TranSactionDetail.depositeAmount}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,209 @@
+.BottomContainerSection {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.Quick-Transfer-Container{
+    /* border: 1px solid blue; */
+    width: 27.8125rem;
+    height: 20.1875rem;
+}
+
+.Quick-Transfer-Body{
+    /* border: 1px solid red; */
+    width: 27.8125rem;
+    height: 17.25rem;
+    padding: 2.1875rem 1.5625rem ;
+    border-radius: 1.5625rem;
+    background-color: white;
+}
+
+.Transfer-Details{
+    /* border: 1px solid yellow; */
+    width: 24.625rem;
+    height: 7.9375rem;
+    margin-bottom: 1.8125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Users-Details{
+    /* border: 1px solid green; */
+    /* width: 5.3125rem; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:100%;
+    /* height: 7.9375rem; */
+}
+
+.User-Details{
+    /* border: 1px solid rgb(185, 26, 26); */
+    width: 6.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.User_Icon{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.User_Position_details{
+    /* border: 1px solid rgb(0, 8, 255); */
+    display: flex;
+    flex:1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+.User_Name{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.21rem;
+}
+.User_Name:hover{
+    font-weight: 500;
+}
+
+.User_Position{
+   font-size: .9375rem;
+   font-weight: 400;
+   line-height: 1.1344rem;
+}
+
+.User_Position:hover{
+    font-weight: 500;
+}
+
+.Arrow_Icon{
+    /* border: 1px solid green; */
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 2px 2px #E7E4E8;
+}
+
+.Transfer-Amount-Details{
+    /* border: 1px solid magenta; */
+    width: 100%;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.Write-Amount{
+  /* border: 1px solid red; */
+ /* width:7.4375rem ; */
+ height: 100%;
+ display:flex;
+ justify-content: center;
+}
+
+
+.InputAmount{
+    font-size: 1rem;
+    width: 7.4375rem; 
+    border: none;
+}
+.InputAmount::placeholder{
+    font-family: "Inter", sans-serif;
+    color: #718EBF;
+}
+
+.InputAmount:focus{
+    outline:none;
+}
+
+.Transfer-Amount-Sec{
+    /* border: 1px solid blue; */
+    flex:1;
+    height: 100%;
+    margin-left: 1.6875rem;
+}
+
+.AmountAndSend{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 3.125rem;
+    background-color: #dde2e5;
+    padding-left: 1.5rem;
+    justify-content: space-between;
+}
+
+/* .Enter-Amount{
+  border: 1px solid green;
+
+} */
+
+.Enter-Amount-Input{
+    /* border: 1px solid blue; */
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    width: 3.5125rem;
+    border: none;
+    background-color: #dde2e5;
+}
+
+.Enter-Amount-Input::placeholder{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #718EBF;  
+}
+.Enter-Amount-Input:focus {
+    outline: none; /* Removes the default focus outline */
+    border: none; /* Removes any border */
+}
+
+.Send-Amount{
+    background-color: blue;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    width: 7.8125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white; 
+}
+.send{
+ font-weight: 500;
+ font-family: "Inter", sans-serif;
+}
+
+.Balance-History-Container{
+    /* border: 1px solid blue; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.Line-Graph-Container{
+    /* border: 1px solid black; */
+    height: 17.25rem;
+    /* width: 39.6875rem; */
+    width: 100%;
+    border-radius: 1.5625rem;
+    padding: 2.1875rem 1.5625rem ;
+    background-color: white;
+}

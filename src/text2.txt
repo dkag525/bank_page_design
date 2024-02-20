@@ -1,0 +1,226 @@
+.ATM-Card-Section {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.Head-Section {
+  /* border: 1px solid navy; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding-right: 3rem;
+}
+
+.mycards {
+  font-size: 1.375rem;
+  line-height: 26.63px;
+  font-weight: 600;
+}
+
+.SeeAll {
+  font-size: 1.063rem;
+  line-height: 20.57px;
+}
+
+.ATM-Card-Parrent {
+  border: 2px solid rgb(227, 39, 139);
+  height: 15.5rem;
+  align-self: stretch;
+  overflow-x: scroll;
+}
+
+.ATM-Card-Parrent::-webkit-scrollbar {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.ATM-Card-Parrent::-webkit-scrollbar-track {
+  background: #cfcdcd;
+}
+
+.ATM-Card-Parrent::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+.ATM-Card-Parrent::-webkit-scrollbar:hover {
+  background-color: green;
+}
+
+.ATM-Card {
+  border: 2px solid red;
+  display: flex;
+  gap: 2rem;
+  min-width: fit-content;
+  width: 100%;
+  height: 100%;
+}
+
+.Complete-ATM-Card {
+  /* border: 1px solid black; */
+}
+
+.ATM-Card-1 {
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.313rem;
+  width: 21.875rem;
+  height: 10.313rem;
+  border-top-left-radius: 1.563rem;
+  border-top-right-radius: 1.563rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ATM-Card-Top-Sec {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Balance-Sec {
+  color: white;
+}
+
+.Balance {
+  font-size: 0.75rem;
+  line-height: 14.4px;
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+
+.Chip-Card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.173rem;
+  height: 2.173rem;
+}
+
+.ATM-Card-mid-Sec {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 14.188rem;
+  /* margin-top: 2.063rem; */
+}
+
+.card-details {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #e5e5e5;
+}
+
+.Crd-delails {
+  font-weight: 600;
+  font-size: 0.938rem;
+}
+
+.ATM-Card-bottom-Sec {
+  /* border: 1px solid red; */
+  width: 21.875rem;
+  height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d60ff;
+  color: white;
+  border-bottom-right-radius: 1.563rem;
+  border-bottom-left-radius: 1.563rem;
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
+  box-shadow: inset 1em 1em 2em 1em #5975cb;
+}
+.circle_image {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ATM-Card-Number {
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.Circle_icon {
+  width: 2.75rem;
+  height: 1.875rem;
+}
+
+.Recent-Transaction-Section {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  /* width: 21.875rem; */
+  flex: 1;
+}
+
+.Recent-Transaction {
+  /* border: 1px solid rgb(0, 255, 0); */
+  margin-bottom: 1.25rem;
+}
+
+.Transaction-details {
+  /* border: 3px solid yellow; */
+  flex: 1;
+  background-color: white;
+  border-radius: 1.563rem;
+  padding-right: 1.625rem;
+  padding-bottom: 1.625rem;
+  padding-left: 1.625rem;
+  /* padding-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.TranHis {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.Deposite_icon_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.063rem;
+}
+
+.recentHistory-details {
+  font-weight: 500;
+  font-size: 1rem;
+  /* line-height: 19.36px; */
+}
+.recentHistory-date {
+  font-size: 0.938rem;
+  /* line-height: 18.15px; */
+  font-weight: 400;
+}
+
+.RecTranHisAmount {
+  /* margin-right: 0.5rem; */
+  font-weight: 500;
+  font-size: 1rem;
+  /* line-height: 19.36px; */
+}
+
+.tran-listRight {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 19.36px;
+}

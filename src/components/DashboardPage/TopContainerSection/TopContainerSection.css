@@ -1,0 +1,235 @@
+.container-top-section{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  
+  .finance-detail-section{
+    /* border: 5px solid green; */
+    gap: 1.875rem;
+    display: flex;
+    width: 100%;
+  }
+  
+  .Card-Section{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  
+  .head-section{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  
+  .my-card-body {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1.875rem;
+  }
+  
+  .atm-card{
+    /* border: 1px solid green; */
+    width: 21.875rem;
+    height: 14.688rem;
+    border-radius: 1.563rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #2d60ff; */
+  }
+  
+  .atm-card-top-sec{
+    padding: 1.625rem 1.625rem 2.194rem 1.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 100%;
+  
+  }
+  
+  .cardholder-validity{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    width: 14.1875rem;
+    
+  }
+  
+  /* .CARD-HOL-DELTAILS{
+    border: 1px solid red;
+  } */
+  
+  .cardholder{
+     font-size: 0.75rem;
+     font-weight: 400;
+     line-height: 0.888rem;
+     color: #cad8ee;
+  }
+  .cardholders{
+     font-size: 0.75rem;
+     font-weight: 400;
+     line-height: 0.888rem;
+     color: #343c6a;
+  }
+  
+  .cardholderName{
+     font-weight: 600;
+     font-size: 0.938rem;
+     line-height: 1.125rem;
+  }
+  
+  .balanceAndchipCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .balance{
+    font-size: 0.75rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 0.9rem;
+  }
+  
+  
+  .price{
+    font-size: 1.25rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  
+  .atm-card-bottom-sec{
+    width: 100%;
+    height: 4.375rem;
+    border-bottom-left-radius: 1.563rem;
+    border-bottom-right-radius: 1.563rem;
+    /* background-color: #2d60ff; */
+    /* box-shadow: inset 1em 1em 2em 1em #5278f4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.625rem;
+  }
+  
+  .atm-card-number-section {
+    /* border: 1px  solid gold; */
+    display: flex;
+    width: 18.75rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .atm-card-number{
+     font-size: 1.375rem;
+     font-weight: 600;
+     line-height: 1.65rem;
+     display: flex;
+     align-items: center;
+  }
+  
+  .Image-Circle_Icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .Transaction-Section{
+    /* border: 1px solid rgb(3, 54, 74); */
+    width: 28%;
+   
+  }
+  
+  .Heading-Sec{
+    display: flex;
+    /* border :1px solid red; */
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+  
+  .Transaction-details-List {
+    /* border: 3px solid blue; */
+    width: 100%;
+    /* overflow-x: scroll; */
+    display: flex;
+  }
+  
+  .Transaction-details-List::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  .Transaction-details-body{
+    /* border: 1px solid rgb(190, 34, 70); */
+    display: flex;
+    gap: 1.875rem;
+  }
+  
+  .Transaction-details{
+    /* border: 1px solid rgb(57, 22, 14); */
+    padding: 1.125rem;
+    width: 22.875rem;
+    height: 14.6875rem;
+    border-radius: 1.563rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .tran-list-details{
+    /* border:1px solid brown; */
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .tran-list-details::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  
+  .transaction-list{
+    /* border: 1px solid rgb(155, 180, 153); */
+    display: flex;
+    /* width: 18.8125rem; */
+    /* height: 3.4375rem; */
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .deposite_icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .depositeFrom-sec{
+    /* border:1px solid yellow; */
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 4.5rem; */
+  }
+  
+  .depositeFrom{
+     font-size: 1rem;
+     line-height: 1.21rem;
+     font-weight: 500;
+  }
+  
+  .deposite-Amount{
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 18.15px;
+  }
+  
+  .Transaction-Amount{
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.21rem;
+  }
