@@ -3,15 +3,17 @@
     width: 100%;
     display: flex;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
   }
   
   .finance-detail-section{
-    /* border: 5px solid green; */
+    /* border: 2px solid green; */
     gap: 1.875rem;
     display: flex;
     width: 100%;
+    /* flex-wrap: wrap; */
   }
-  
+
   .Card-Section{
     /* border: 1px solid blue; */
     display: flex;
@@ -143,7 +145,7 @@
   }
   
   .Transaction-Section{
-    /* border: 1px solid rgb(3, 54, 74); */
+    /* border: 1px solid rgb(11, 237, 214); */
     width: 28%;
    
   }
@@ -233,3 +235,7 @@
       font-size: 1rem;
       line-height: 1.21rem;
   }
+
+ 
+
+ 

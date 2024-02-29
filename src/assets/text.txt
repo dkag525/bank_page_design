@@ -1,0 +1,35 @@
+ <table className="table">
+          <tr>
+            <th>Description</th>
+            <th>Transaction ID</th>
+            <th>Type</th>
+            <th>Card</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Receipt</th>
+          </tr>
+          {tableData.map((el, i) => {
+            return (
+              <tr>
+                <td key={i}>
+                  <td>
+                    <img
+                      className="ArrowImage_Icon"
+                      src={ArrowUp}
+                      alt="ArrowUp"
+                    />
+                  </td>
+                  <td>{el.discription}</td>
+                </td>
+                <td>{el.TransactionId}</td>
+                <td>{el.Type}</td>
+                <td>{el.Card}</td>
+                <td>{el.Date}</td>
+                <td className="TableData RedColor">{el.Amount}</td>
+                <td>
+                  <button>Download</button>
+                </td>
+              </tr>
+            );
+          })}
+        </table>

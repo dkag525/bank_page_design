@@ -1,0 +1,113 @@
+.my-cards{
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 1.875rem;
+}   
+
+.atmCard{
+    /* border: 1px solid magenta; */
+    width: 21.875rem;
+    height: 14.0625rem;
+    border-radius: 1.5625rem;
+}
+
+.atmCard-inner-top-sec{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bal-History-Section{
+    /* border: 1px solid yellow; */
+}
+
+.Balance-Section{
+    /* border: 1px solid red; */
+    font-weight: 400;
+    font-size: .75rem
+}
+
+.Price-Section{
+    /* border: 1px solid red; */
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.Chip_Card_Icon{
+    display: flex;
+    align-items: center;
+}
+
+.User-Name-Section{
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 14.1875rem;
+    margin-top: 2.0625rem;
+}
+
+.Card-Holder-Section{
+   /* border: 1px solid rgb(130, 255, 105); */
+   line-height: 1.125rem; 
+}
+
+
+.card-holder{
+    /* border: 1px solid gold; */
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+.card-holder-name{
+    /* border: 1px solid gold; */
+    font-weight: 600;
+    font-size: .9375rem;
+    
+}
+
+.Validity-Section{
+    /* border: 1px solid hotpink; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.125rem;
+}
+
+.valid-thru{
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+.valid-date{
+    font-weight: 600;
+    font-size: .9375rem;
+}
+
+.atmCard-inner-bottom-sec{
+    /* border: 1px solid white; */
+    margin-top: 2.0625rem;
+    border-radius: 0px 0px 1.5625rem 1.5625rem;
+    display: flex;
+    height: 3.6rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.625rem;
+    padding-right: 1.625rem;
+}
+
+.Atm-Card-Number{
+    font-weight: 600;
+    font-size: 1.375rem;
+}
+
+
+.atmCard-inner-top-sec-body{
+    /* border :1px solid black; */
+    padding-left: 1.625rem ;
+    padding-top: 1.5rem;
+    padding-right: 1.625rem;
+    padding-bottom: 0px;
+    border-top-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+}

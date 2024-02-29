@@ -10,35 +10,43 @@ import Loans from "../../../assets/svgComponent/loans";
 import Services from "../../../assets/svgComponent/services";
 import MyPrivileges from "../../../assets/svgComponent/myPrivileges";
 import Settings from "../../../assets/svgComponent/settings";
+import { useNavigate } from "react-router-dom";
 
 const leftBarLinks = [
   {
     img: <Home color={""} />,
     title: "Dashboard",
+    route: "/",
   },
   {
     img: <Transaction color={""} />,
     title: "Transactions",
+    route: "transactionpage",
   },
   {
     img: <Accounts color={""} />,
     title: "Accounts",
+    route: "accountspage",
   },
   {
     img: <Investments color={""} />,
     title: "Investments",
+    route: "investmentspage",
   },
   {
     img: <CreditCards color={""} />,
     title: "Credit Cards",
+    route: "creditcardspage",
   },
   {
     img: <Loans color={""} />,
     title: "Loans",
+    route: "loanspage",
   },
   {
     img: <Services color={""} />,
     title: "Services",
+    route: "servicespage",
   },
   {
     img: <MyPrivileges color={""} />,
@@ -47,16 +55,20 @@ const leftBarLinks = [
   {
     img: <Settings color={""} />,
     title: "Setting",
+    route: "settingpage",
   },
 ];
 
 const LeftNavBar = () => {
+  const navigate = useNavigate();
+
   const [selectedIndex, setSelectedIndex] = useState(0);
   const top = 3.75 * selectedIndex;
 
   const handleLinkClick = (element, index) => {
     // console.log(element, index);
     setSelectedIndex(index);
+    navigate(element.route);
   };
 
   return (
@@ -78,6 +90,7 @@ const LeftNavBar = () => {
         {leftBarLinks.map((el, i) => {
           return (
             <div
+              key={i}
               className="left-nav-links"
               onClick={() => handleLinkClick(el, i)}
             >

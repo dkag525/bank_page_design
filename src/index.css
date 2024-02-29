@@ -33,6 +33,10 @@ body {
   color: white;
 }
 
+.LightBlackColor{
+  color:#343c6a;
+}
+
 .secondary-background {
   background-color: white;
 }
@@ -71,4 +75,12 @@ body {
   font-weight: 600;
   font-size: 1.063rem;
   line-height: 1.286rem;
+}
+
+.head-section-transaction-500-16px{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+  display: flex;
 }

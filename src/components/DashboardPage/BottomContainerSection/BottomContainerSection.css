@@ -202,8 +202,9 @@
     /* border: 1px solid black; */
     height: 17.25rem;
     /* width: 39.6875rem; */
-    width: 100%;
+    width:92%;
     border-radius: 1.5625rem;
     padding: 2.1875rem 1.5625rem ;
     background-color: white;
 }
+
