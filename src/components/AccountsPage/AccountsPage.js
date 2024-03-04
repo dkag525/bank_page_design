@@ -12,6 +12,8 @@ import Spotify_Sub_Icon from "../../assets/svg/Spotify_Sub_Icon.svg";
 import Mobile_Services_Icon from "../../assets/svg/Mobile_Services_Icon.svg";
 import BarChart from "../AccountsPage/BarChart";
 import Apple_Icon from "../../assets/svg/Apple_Icon.svg";
+import Michel_Icon from "../../assets/svg/Michel_Icon.svg";
+import PlayStation_Icon from "../../assets/svg/PlayStation_Icon.svg";
 
 const AccountsPage = () => {
   const AccountsFinanceStatus = [
@@ -85,6 +87,31 @@ const AccountsPage = () => {
   const AppleStoreDetails = [
     {
       img: Apple_Icon,
+      storename: "Apple Store",
+      storetime: "5h ago",
+      storeAmount: "$450",
+      backgroundColor: "#DCFAF8",
+    },
+    {
+      img: Michel_Icon,
+      storename: "Michael",
+      storetime: "2 days ago",
+      storeAmount: "$160",
+      backgroundColor: "#FFF5D9",
+    },
+    {
+      img: PlayStation_Icon,
+      storename: "Playstation",
+      storetime: "5 days ago",
+      storeAmount: "$1085",
+      backgroundColor: "#E7EDFF",
+    },
+    {
+      img: Apple_Icon,
+      storename: "William",
+      storetime: "10 days ago",
+      storeAmount: "$90",
+      backgroundColor: "#FFE0EB",
     },
   ];
 
@@ -219,23 +246,30 @@ const AccountsPage = () => {
             Invoices Sent
           </div>
           <div className="Invoice-Container">
-            <div className="Invoice-Bill-Container">
-              <div className="apple-icon-div">
-                <img src={Apple_Icon} alt="Apple_Icon" />
-              </div>
-              <div className="Store_Invoice_Info">
-                <div className="Store_Name">
-                  <p className="head-section-transaction-500-16px greyColor">
-                    Apple Store
-                  </p>
-                  <p className="font-weight-400-15px secondary-color Store_Price">
-                    5h ago
-                  </p>
-                </div>
+            {AppleStoreDetails.map((el, i) => {
+              return (
+                <div key={i} className="Invoice-Bill-Container">
+                  <div
+                    style={{ backgroundColor: `${el.backgroundColor}` }}
+                    className="apple-icon-div"
+                  >
+                    <img src={el.img} alt="Apple_Icon" />
+                  </div>
+                  <div className="Store_Invoice_Info">
+                    <div className="Store_Name">
+                      <p className="head-section-transaction-500-16px greyColor">
+                        {el.storename}
+                      </p>
+                      <p className="font-weight-400-15px secondary-color Store_Price">
+                        {el.storetime}
+                      </p>
+                    </div>
 
-                <div className="font-weight-400-16px">$450</div>
-              </div>
-            </div>
+                    <div className="font-weight-400-16px">{el.storeAmount}</div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
