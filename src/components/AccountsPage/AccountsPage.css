@@ -1,5 +1,5 @@
 .AccountsPage{
-    /* border:1px solid black; */
+    border:1px solid black;
     display: flex;
     /* gap:1.875rem; */
     justify-content: space-between;
@@ -65,15 +65,16 @@
 }
 
 .Middle-Container{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     gap: 1.875rem;
     flex-wrap: wrap;
+    margin-bottom: 1.4375rem;
 }
 
 .Last-Transaction-Container{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     flex: 1;
     /* height: 14.6875rem; */
     /* margin-bottom: 1.25rem; */
@@ -158,17 +159,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .My-ATM-Card-Container{
     /* border: 1px solid blue; */
     width: 21.875rem;
@@ -182,8 +172,98 @@
     margin-bottom: 1.25rem;
 }
 
+.Body-Container-Bottom-Section{
+    border: 1px solid red;
+    height: 25.6875rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
 
+.Body-Container-left-section{
+    border: 1px solid blue;
+    flex: 1;
+}
 
+.Body-Container-right-section{
+    border: 1px solid black;
+    width:21.875rem;
+}
+.D-C-OverView{
+    border: 1px solid red;
+    height: 22.75rem;
+    width: 99.9%;
+    border-radius: 1.5625rem;
+    padding: 1.75rem;
+}
 
+.D-B-Container-sec{
+    border:1px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+.D-B-Container-left{
+    border:2px solid black;
+    width: fit-content;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    /* color: green; */
+}
+.D-B-Container-right{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 1.5625rem;
+}
+.Debit-and-Credit{
+     border: 1px solid black;
+     display: flex;
+     align-items: center;
+     gap: .625rem;
+}
 
+span{
+    color: black;
+}
 
+.Invoice-Container{
+    border: 1px solid blue;
+    height: 22.75rem;
+    width: 21.875rem;
+    padding: 1.625rem 1.875rem;
+}
+
+.Invoice-Bill-Container{
+    border: 1px solid red;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+}
+.apple-icon-div{
+    background-color: #09e7d8;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5625rem;
+}
+.Store_Invoice_Info{
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.Store_Name{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+.Store_Price{
+    line-height: 1.21rem;
+}

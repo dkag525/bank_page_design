@@ -10,6 +10,8 @@ import Circle_icon1 from "../../assets/svg/Circle_icon1.svg";
 import Emilly_Wilson_Icon from "../../assets/svg/Emilly_Wilson_Icon.svg";
 import Spotify_Sub_Icon from "../../assets/svg/Spotify_Sub_Icon.svg";
 import Mobile_Services_Icon from "../../assets/svg/Mobile_Services_Icon.svg";
+import BarChart from "../AccountsPage/BarChart";
+import Apple_Icon from "../../assets/svg/Apple_Icon.svg";
 
 const AccountsPage = () => {
   const AccountsFinanceStatus = [
@@ -77,6 +79,12 @@ const AccountsPage = () => {
       Card: "1234 ****",
       Status: "Completed",
       Amount: "+$780",
+    },
+  ];
+
+  const AppleStoreDetails = [
+    {
+      img: Apple_Icon,
     },
   ];
 
@@ -164,6 +172,70 @@ const AccountsPage = () => {
           </div>
           <div className="">
             <Cards atmcarddetails={atmcarddetails} />
+          </div>
+        </div>
+      </div>
+      <div className="Body-Container-Bottom-Section">
+        <div className="Body-Container-left-section">
+          <div className="Last_Transation font-weight-600-22px">
+            Debit & Credit Overview
+          </div>
+          <div className="D-C-OverView">
+            <div className="D-B-Container-sec secondary-color">
+              <div className="D-B-Container-left">
+                <span>$7,560</span> Debited & <span>$5,420</span> Credited in
+                this Week
+              </div>
+              <div className="D-B-Container-right">
+                <div className="Debit-and-Credit">
+                  <div
+                    style={{
+                      width: "15px",
+                      height: "15px",
+                      backgroundColor: "blue",
+                      borderRadius: "5px",
+                    }}
+                  ></div>
+                  <p>Debit</p>
+                </div>
+                <div className="Debit-and-Credit">
+                  <div
+                    style={{
+                      width: "15px",
+                      height: "15px",
+                      backgroundColor: "#FF82AC",
+                      borderRadius: "5px",
+                    }}
+                  ></div>
+                  <p>Credit</p>
+                </div>
+              </div>
+            </div>
+            <BarChart />
+          </div>
+        </div>
+        <div className="Body-Container-right-section">
+          <div className="Last_Transation font-weight-600-22px">
+            Invoices Sent
+          </div>
+          <div className="Invoice-Container">
+            <div className="Invoice-Bill-Container">
+              <div className="apple-icon-div">
+                <img src={Apple_Icon} alt="Apple_Icon" />
+              </div>
+              <div className="Store_Invoice_Info">
+                <div className="Store_Name">
+                  <p className="head-section-transaction-500-16px greyColor">
+                    Apple Store
+                  </p>
+                  <p className="font-weight-400-15px secondary-color Store_Price">
+                    5h ago
+                  </p>
+                </div>
+
+                <div className="font-weight-400-16px">$450</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -59,7 +59,9 @@ body {
  color: #41D4A8;
 }
 
-
+.greyColor {
+  color: #B1B1B1;
+}
 
 .font-weight-600-22px {
   font-family: "Inter", sans-serif;
@@ -83,4 +85,18 @@ body {
   font-size: 1rem;
   line-height: 1.21rem;
   display: flex;
+}
+
+.font-weight-400-15px {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: .9375rem;
+  line-height: .9469rem;
+}
+
+.font-weight-400-16px {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #718EBF;
 }
