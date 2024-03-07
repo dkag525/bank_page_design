@@ -1,0 +1,143 @@
+.investment-top-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.Investment-Status {
+  /* border: 1px solid blue; */
+  width: 21.875rem;
+  height: 7.5rem;
+  border-radius: 1.5625rem;
+  /* padding: 1.5625rem 3rem; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Investment_Icon {
+  /* border: 1px solid red; */
+  /* width: 17.9375rem; */
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+/* .........Middle Container.......... */
+
+.Invest-middle-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 1.875rem;
+}
+
+.yearly-investment-graph {
+  /* border: 1px solid rgb(106, 4, 115); */
+  width: 50%;
+  height: 329px;
+}
+
+.Monthly-Revenue-graph {
+  /* border: 1px solid rgb(12, 245, 230); */
+  width: 50%;
+  height: 329px;
+}
+.Monthly_Revenue {
+  /* border: 1px solid red; */
+  height: 85.6%;
+  background-color: white;
+  border-radius: 1.5625rem;
+  padding: 1.8125rem;
+}
+.LineChartMonthlyRevenue {
+  /* border: 1px solid red; */
+  height: 85.6%;
+  background-color: white;
+  border-radius: 1.5625rem;
+  padding: 1.8125rem;
+  width: 100%;
+}
+
+/* .........Bottom Container........... */
+
+.Invest-bottom-container {
+  /* border: 1px solid magenta; */
+  height: 345px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.My-Investment-container {
+  /* border: 1px solid green; */
+  width: 60%;
+  /* gap: 0.9375rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.My-Trending-Stock {
+  /* border: 1px solid green; */
+  width: 40%;
+}
+.MyInvestment-Place {
+  /* border: 1px solid blue; */
+  height: 5.625rem;
+  display: flex;
+  align-items: center;
+  padding: 1.4375rem 3.1875rem 1.4375rem 0.9375rem;
+  border-radius: 1.25rem;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.Investment-store-Name {
+  /* border: 1px solid magenta; */
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  width: 40%;
+}
+
+.returnAndinvestment {
+  /* border: 1px solid rgb(0, 200, 255); */
+  display: flex;
+  width: 60%;
+  margin-left: 3.5rem;
+  justify-content: space-between;
+}
+
+.Stock-Status {
+  /* border: 1px solid magenta; */
+  background-color: white;
+  border-radius: 1.5625rem;
+  width: 100%;
+  padding: 1.6875rem;
+}
+.Stock_Table {
+  /* border: 2px solid yellow; */
+  width: 100%;
+  height: 238px;
+}
+.Stock-th {
+  /* border: 1px solid black; */
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+}
+.cell {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.21rem;
+}
+.cell4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+}

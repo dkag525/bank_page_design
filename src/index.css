@@ -33,8 +33,8 @@ body {
   color: white;
 }
 
-.LightBlackColor{
-  color:#343c6a;
+.LightBlackColor {
+  color: #343c6a;
 }
 
 .secondary-background {
@@ -52,15 +52,15 @@ body {
 }
 
 .RedColor {
- color: #FF4B4A;
+  color: #ff4b4a;
 }
 
 .GreenColor {
- color: #41D4A8;
+  color: #41d4a8;
 }
 
 .greyColor {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .font-weight-600-22px {
@@ -79,7 +79,7 @@ body {
   line-height: 1.286rem;
 }
 
-.head-section-transaction-500-16px{
+.head-section-transaction-500-16px {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -90,13 +90,33 @@ body {
 .font-weight-400-15px {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: .9375rem;
-  line-height: .9469rem;
+  font-size: 0.9375rem;
+  line-height: 0.9469rem;
 }
 
 .font-weight-400-16px {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: #718EBF;
+  color: #718ebf;
+  line-height: 1.21rem;
+}
+
+.font-weight-600-20px {
+  line-height: 1.5125rem;
+  font-size: 1.25rem;
+  font-weight: 37.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.Margin_Bottom_UnderHeadSec {
+  margin-bottom: 1.25rem;
+}
+
+.gap30px {
+  gap: 1.875rem;
+}
+
+.LineHeight {
+  line-height: 1.5625rem;
 }
