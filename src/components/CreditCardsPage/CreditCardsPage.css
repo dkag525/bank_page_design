@@ -1,0 +1,66 @@
+.CreditCardPage-top-container {
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+}
+.CreditCard-top-container-body {
+  border: 1px solid blue;
+  width: 100%;
+}
+.CreditCard-HeadSection {
+  border: 1px solid magenta;
+}
+
+.CreditCard-body {
+  border: 1px solid blue;
+  width: 350px;
+  height: 14.0625rem;
+  /* background-color: white; */
+  border-radius: 1.5625rem;
+  justify-content: space-between;
+}
+
+.CreditCard-User-Details-Sec {
+  border: 1px solid green;
+  height: calc(14.0625rem - 4.375rem);
+  border-top-left-radius: 1.5625rem;
+  border-top-right-radius: 1.5625rem;
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.7569rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CreditCard-User-Card-No-Sec {
+  border: 2px solid yellow;
+  height: 4.375rem;
+  border-bottom-left-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
+}
+
+.CreditCard-User-Card-No {
+  /* border: 1px solid black; */
+}
+
+.cc-balance-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cc-credit-card-name-container {
+  border: 1px solid black;
+  display: flex;
+}
+
+.cc-balance-body {
+  border: 1px solid red;
+}

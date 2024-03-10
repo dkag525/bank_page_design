@@ -48,6 +48,18 @@ const TransactionPageTopContainer = () => {
       CardNumber: "3778 **** **** 1234",
       circleIcon: Circle_icon1,
     },
+    {
+      Balance: "Balance",
+      Price: "$5,756",
+      // atmcardchip: <ChipCard color={""} />,
+      atmcardchip: Chip_Card,
+      CardHolder: "CARD HOLDER",
+      CardName: "Eddy Cusuma",
+      ValidThru: "VALID THRU",
+      CardExpiry: "12/22",
+      CardNumber: "3778 **** **** 1234",
+      circleIcon: Circle_icon1,
+    },
   ];
 
   return (

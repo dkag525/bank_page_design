@@ -120,3 +120,13 @@ body {
 .LineHeight {
   line-height: 1.5625rem;
 }
+
+.lato-600-22px {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+/* .Background-color-light-blue {
+
+} */
