@@ -10,6 +10,12 @@ import Doughnut from "./Doughnut";
 import CardTypeBlue from "../../assets/svg/CardTypeBlue.svg";
 import CardTypePink from "../../assets/svg/CardTypePink.svg";
 import CardTypeYellow from "../../assets/svg/CardTypeYellow.svg";
+import ArrowDown1 from "../../assets/svg/ArrowDown1.svg";
+import ApplePay_Icon from "../../assets/svg/ApplePay_Icon.jpg";
+import AppleStore from "../../assets/svg/AppleStore.jpg";
+import BlockCard_Icon from "../../assets/svg/BlockCard_Icon.svg";
+import ChangePinCode_Icon from "../../assets/svg/ChangePinCode_Icon.svg";
+import GooglePay_Icon from "../../assets/svg/GooglePay_Icon.svg";
 
 const CreditCardsPage = () => {
   const atmcarddetails = [
@@ -80,6 +86,74 @@ const CreditCardsPage = () => {
     },
   ];
 
+  const Cardlist = [
+    {
+      img: CardTypeBlue,
+      Card: "Card Type",
+      CardType: "Secondary",
+      Bank: "Bank",
+      BankName: "DBL Bank",
+      CardNumber: "Card Number",
+      CardNo: "**** **** 5600",
+      UserName: "Namain Card",
+      CardOnName: "WiLLiam",
+    },
+    {
+      img: CardTypeBlue,
+      Card: "Card Type",
+      CardType: "Secondary",
+      Bank: "Bank",
+      BankName: "BRC Bank",
+      CardNumber: "Card Number",
+      CardNo: "**** **** 4300",
+      UserName: "Namain Card",
+      CardOnName: "Michel",
+    },
+    {
+      img: CardTypeBlue,
+      Card: "Card Type",
+      CardType: "Secondary",
+      Bank: "Bank",
+      BankName: "ABM Bank",
+      CardNumber: "Card Number",
+      CardNo: "**** **** 7560",
+      UserName: "Namain Card",
+      CardOnName: "Edward",
+    },
+  ];
+
+  const CardSetting = [
+    {
+      img: BlockCard_Icon,
+      CardSettingType: "Block Card",
+      CardSettingOption: "Instantly block your card",
+    },
+    {
+      img: ChangePinCode_Icon,
+      CardSettingType: "Change Pin Code",
+      CardSettingOption: "Choose another pin code",
+    },
+    {
+      img: GooglePay_Icon,
+      CardSettingType: "Add to Google Pay",
+      CardSettingOption: "Withdraw without any card",
+    },
+    {
+      img: ApplePay_Icon,
+      CardSettingType: "Add to Apple Pay",
+      CardSettingOption: "Withdraw without any card",
+    },
+    {
+      img: AppleStore,
+      CardSettingType: "Add to Apple Store",
+      CardSettingOption: "Withdraw without any card",
+    },
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div className="CreditCardPage-top-container Margin_Bottom_UnderHeadSec">
@@ -94,7 +168,7 @@ const CreditCardsPage = () => {
           </div>
         </div>
       </div>
-      <div className="CreditCardPage-Middle-container">
+      <div className="CreditCardPage-Middle-container Margin_Bottom_UnderHeadSec">
         <div className="Card-expenses-statistics-container">
           <div className="font-weight-600-22px Margin_Bottom_UnderHeadSec">
             Card Expense Statistics
@@ -161,48 +235,183 @@ const CreditCardsPage = () => {
           <div className="font-weight-600-22px Margin_Bottom_UnderHeadSec">
             Card List
           </div>
-          <div className="Card-List-Body">
-            <table className="Card-table-data">
-              <tr>
-                <th className="Card-table-heading table-heading-th1">
-                  <div className="CardBackground">
-                    <ul className="Card1"></ul>
-                    <div className="Card-Type">
-                      <p className="head-section-transaction-500-16px BlackColor LineHeight ">
-                        Card Type
-                      </p>
-                      <p className="font-weight-400-15px">Secondary</p>
-                    </div>
-                  </div>
-                </th>
-                <th className="Card-table-heading">
-                  <p className="head-section-transaction-500-16px BlackColor LineHeight ">
-                    Bank
-                  </p>
-                  <p className="font-weight-400-15px">DBL Bank</p>
-                </th>
-                <th className="Card-table-heading">
-                  <p className="head-section-transaction-500-16px BlackColor LineHeight ">
-                    Card Number
-                  </p>
-                  <p className="font-weight-400-15px">**** **** 5600</p>
-                </th>
-                <th className="Card-table-heading">
-                  <p className="head-section-transaction-500-16px BlackColor LineHeight ">
-                    Namain Card
-                  </p>
-                  <p className="font-weight-400-15px">William</p>
-                </th>
-                <th className="Card-table-heading font-weight-500-15px">
-                  <a
-                    style={{ color: "#1814F3" }}
-                    href="https://chat.openai.com/"
+          <div className="Card-List-Body-container">
+            {Cardlist.map((el, i) => {
+              const BackGroundColor = () => {
+                let bgColor;
+                if (i === 0) {
+                  bgColor = "#E7EDFF";
+                } else if (i === 1) {
+                  bgColor = "#FFE0EB";
+                } else {
+                  bgColor = "#FFF5D9";
+                }
+                return bgColor;
+              };
+
+              return (
+                <div className="Card-List-Body">
+                  <table className="Card-table-data">
+                    <tr>
+                      <th className="Card-table-heading table-heading-th1">
+                        <div className="CardBackground">
+                          <ul
+                            style={{ background: BackGroundColor() }}
+                            className="Card1"
+                          >
+                            <img src={el.img} alt="CardType_Icon" />
+                          </ul>
+                          <div className="Card-Type">
+                            <p className="head-section-transaction-500-16px BlackColor LineHeight ">
+                              {el.Card}
+                            </p>
+                            <p className="font-weight-400-15px">
+                              {el.CardType}
+                            </p>
+                          </div>
+                        </div>
+                      </th>
+                      <th className="Card-table-heading">
+                        <p className="head-section-transaction-500-16px BlackColor LineHeight ">
+                          {el.Bank}
+                        </p>
+                        <p className="font-weight-400-15px">{el.BankName}</p>
+                      </th>
+                      <th className="Card-table-heading">
+                        <p className="head-section-transaction-500-16px BlackColor LineHeight ">
+                          {el.CardNumber}
+                        </p>
+                        <p className="font-weight-400-15px">{el.CardNo}</p>
+                      </th>
+                      <th className="Card-table-heading">
+                        <p className="head-section-transaction-500-16px BlackColor LineHeight ">
+                          {el.UserName}
+                        </p>
+                        <p className="font-weight-400-15px">{el.CardOnName}</p>
+                      </th>
+                      <th className="Card-table-heading font-weight-500-15px">
+                        <a
+                          style={{ color: "#1814F3" }}
+                          href="https://chat.openai.com/"
+                        >
+                          View Details
+                        </a>
+                      </th>
+                    </tr>
+                  </table>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="CC-Bottom-Container">
+        <form action="" onSubmit={handleSubmit}>
+          <div className="Add-New-CArd-Form-container">
+            <div className="font-weight-600-22px Margin_Bottom_UnderHeadSec">
+              Add New Card
+            </div>
+            <div className="Add-New-CArd">
+              <div
+                style={{ lineHeight: "1.75rem" }}
+                className="CC-Paragraph font-weight-400-16px Margin_Bottom_UnderHeadSec"
+              >
+                Credit Card generally means a plastic card issued by Scheduled
+                Commercial Banks assigned to a Cardholder, with a credit limit,
+                that can be used to purchase goods and services on credit or
+                obtain cash advances.
+              </div>
+              <div className="Credit-Card-Submit-Form">
+                <div className="CardType-Container">
+                  <h5
+                    style={{ color: "black" }}
+                    className="font-weight-400-16px"
                   >
-                    View Details
-                  </a>
-                </th>
-              </tr>
-            </table>
+                    Card Type
+                  </h5>
+                  <input
+                    className="CardText"
+                    type="text"
+                    placeholder="Classic"
+                  />
+                </div>
+                <div className="CardType-Name">
+                  <h5
+                    style={{ color: "black" }}
+                    className="font-weight-400-16px"
+                  >
+                    Name on Card
+                  </h5>
+                  <input
+                    className="CardText"
+                    type="text"
+                    placeholder="My Cards"
+                  />
+                </div>
+              </div>
+              <div className="Credit-Card-Submit-Form">
+                <div className="CardType-Container">
+                  <h5
+                    style={{ color: "black" }}
+                    className="font-weight-400-16px"
+                  >
+                    Card Number
+                  </h5>
+                  <input
+                    className="CardText"
+                    type="text"
+                    placeholder="**** **** **** ****"
+                  />
+                </div>
+                <div className="CardType-Name">
+                  <h5
+                    style={{ color: "black" }}
+                    className="font-weight-400-16px"
+                  >
+                    Expiration Date
+                  </h5>
+                  <div className="Expiration-Date">
+                    <select className="Expiration-Date-Text">
+                      <option value="">25 January 2025</option>
+                      <option value="">26 January 2025</option>
+                      <option value="">27 January 2025</option>
+                      <option value="">28 January 2025</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className="CC-Submit-Button">
+                <button type="submit" className="Submit-btn">
+                  Add Card
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div className="card-setting-container">
+          <div className="font-weight-600-22px Margin_Bottom_UnderHeadSec">
+            Card Setting
+          </div>
+          <div className="card-setting-body">
+            {CardSetting.map((el, i) => {
+              return (
+                <div key={i} className="card-setting-list-container">
+                  <img
+                    style={{ marginRight: "1.25rem" }}
+                    src={el.img}
+                    alt="Card-Setting-Icon"
+                  />
+                  <div>
+                    <p className="head-section-transaction-500-16px LineHeight">
+                      {el.CardSettingType}
+                    </p>
+                    <p className="font-weight-400-15px secondary-color">
+                      {el.CardSettingOption}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
