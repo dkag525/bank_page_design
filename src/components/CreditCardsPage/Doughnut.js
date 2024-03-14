@@ -1,24 +1,30 @@
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Pie } from "react-chartjs-2";
-import ChartDataLabels from "chartjs-plugin-datalabels"; // Import the datalabels plugin
+import { Doughnut } from "react-chartjs-2";
 
-ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ["Entertainment", "Bill Expense", "Others", "Investment"],
-
+  labels: ["green", "pink", "Yellow", "blue"],
   datasets: [
     {
-      data: [30, 15, 35, 20],
-      backgroundColor: ["#FA00FF", "#1814F3", "#FC7900", "#343C6A"],
-      borderColor: ["#f5f7fa", "#f5f7fa", "#f5f7fa", "#f5f7fa"],
-      borderWidth: 10,
-      // hoverOffset: 10, // Additional spacing on hover
+      //   label: "# of Votes",
+      data: [12, 12, 12, 12],
+      backgroundColor: ["#16DBCC", "#FF82AC", "#FFBB38", "#4C78FF"],
+      Offset: 15, // Additional spacing on hover
       //   borderAlign: "inner",
       //   borderDash: [2],
       //   circumference: 350,
       //   spacing: 15,
+      //   borderColor: [
+      //     "rgba(255, 99, 132, 1)",
+      //     "rgba(54, 162, 235, 1)",
+      //     "rgba(255, 206, 86, 1)",
+      //     "rgba(75, 192, 192, 1)",
+      //     "rgba(153, 102, 255, 1)",
+      //     "rgba(255, 159, 64, 1)",
+      //   ],
+      //   borderWidth: 1,
     },
   ],
 };
@@ -39,7 +45,7 @@ export const options = {
       },
     },
     datalabels: {
-      color: "#fff", // Font color for the values
+      color: "transparent", // Font color for the values
       anchor: "center", // Position of the values inside the pie chart
       align: "end", // Alignment of the values inside the pie chart
 
@@ -79,9 +85,9 @@ export const options = {
 
   rotation: 5 * Math.PI, // Rotate pie chart by 90 degrees
   circumference: 115 * Math.PI, // Full circumference
-  cutout: 0, // Create a doughnut chart with a center hole
+  cutout: 45, // Create a doughnut chart with a center hole
 };
 
-export function PieChart() {
-  return <Pie data={data} options={options} />;
+export default function App() {
+  return <Doughnut data={data} options={options} />;
 }
