@@ -1,0 +1,84 @@
+.Loans-body-top-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TypeOfLoan-body {
+  /* border: 1px solid blue; */
+  height: 7.5rem;
+  /* width: 15.9375rem; */
+  width: 17.9375rem;
+  border-radius: 1.5625rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.6875rem;
+  /* margin-right: 1.875rem; */
+}
+
+.Loan_Icon {
+  margin-right: 0.9375rem;
+}
+
+/* ........Middle Container........ */
+
+.Loans-body-middle-container {
+  /* border: 2px solid black; */
+}
+
+.Active_Loans_Overview {
+  /* border: 2px solid green; */
+}
+
+.Active_Loans_body {
+  /* border: 3px solid yellow; */
+  border-radius: 1.5625rem;
+  background-color: white;
+  padding: 1.875rem;
+}
+
+.Loans-Table {
+  /* border: 1px solid magenta; */
+  width: 100%;
+}
+
+.Loans-Table-Head {
+  /* border: 1px solid blue; */
+}
+
+.TableGap {
+  /* border: 1px solod red; */
+  margin-bottom: 1.6875rem;
+}
+
+.LoansButton {
+  width: fit-content;
+  padding: 0.5rem 1.75rem;
+  border-radius: 3.125rem;
+  border: 1px solid #232323;
+}
+
+.LoansButton:hover {
+  cursor: pointer;
+  color: #1814f3;
+  border: 1px solid #1814f3;
+}
+
+.Loans-Table-Data {
+  /* border: 2px solid green; */
+}
+
+.TotalLoansAmount {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+.LoansTotalData {
+  /* border: 1px solid red; */
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+  color: #fe5c73;
+}

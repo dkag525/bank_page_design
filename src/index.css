@@ -29,6 +29,10 @@ body {
   background: #2d60ff;
 }
 
+.ColorBlue {
+  color: #1814f3;
+}
+
 .whiteColor {
   color: white;
 }
@@ -143,27 +147,26 @@ body {
 .lato-400-12px {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: .75rem;
-  line-height: .9rem;
+  font-size: 0.75rem;
+  line-height: 0.9rem;
 }
 
 .lato-600-15px {
   font-family: "Lato", sans-serif;
   font-weight: 600;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
 }
-.lato-600-20px{
+.lato-600-20px {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
-
 .linearGradientBlue {
-  background: linear-gradient(to right, #2D60FF 0%, #539BFF 100%);
+  background: linear-gradient(to right, #2d60ff 0%, #539bff 100%);
 }
 .linearGradientDarkBlue {
-  background: linear-gradient(to bottom, #4C49ED 100%, #0A06F4 100%);
+  background: linear-gradient(to bottom, #4c49ed 100%, #0a06f4 100%);
 }
