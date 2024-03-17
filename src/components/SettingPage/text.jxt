@@ -1,0 +1,14 @@
+   <div className="User-name">
+              <div style={{ color: "black" }} className="font-weight-400-16px">
+                Your Name
+              </div>
+              <div>
+                <input
+                  className="InputSize"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Charlene Reed"
+                />
+              </div>
+            </div>

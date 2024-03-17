@@ -97,6 +97,15 @@ const ServicesPage = () => {
     },
   ];
 
+  const bgColorArray = [
+    "#FFE0EB",
+    "#FFF5D9",
+    "#FFE0EB",
+    "#E7EDFF",
+    "#DCFAF8",
+    "#FFE0EB",
+  ];
+
   return (
     <>
       <div className="Services-Page-Top-Container Margin_Bottom_UnderHeadSec">
@@ -123,14 +132,7 @@ const ServicesPage = () => {
           </div>
 
           {BankServicesList.map((el, i) => {
-            const BackGroundColor = () => {
-              let bgcolor;
-              if (i === 0) {
-                bgcolor = "#FFE0EB";
-              } else if (i === 1) {
-                bgcolor = "#FFF5D9";
-              }
-            };
+            let BgColor = bgColorArray[i];
 
             return (
               <div key={i} className="bank-services-list-container">
@@ -140,7 +142,7 @@ const ServicesPage = () => {
                       <div className="Bank-Services-Name-container">
                         <div
                           style={{
-                            background: "pink",
+                            background: BgColor,
                             marginRight: "1.375rem",
                             borderRadius: "1.25rem",
                             display: "flex",
