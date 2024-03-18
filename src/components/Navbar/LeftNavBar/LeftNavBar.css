@@ -25,7 +25,7 @@
 }
 
 .left-nav-links-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
 }
 
@@ -41,14 +41,14 @@
 }
 
 .left-nav-links {
-  border: 1px solid darkcyan;
+  /* border: 1px solid darkcyan; */
   height: 3.75rem;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 .left-nav-linkss {
-  border: 1px solid rgb(246, 223, 20);
+  /* border: 1px solid rgb(246, 223, 20); */
   height: 3.75rem;
   display: flex;
   align-items: center;

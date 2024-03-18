@@ -7,12 +7,12 @@
 }
 
 .Setting-Top-Container-Heading {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-bottom: 3.25rem;
 }
 
 .Setting-Options {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -22,18 +22,20 @@
 .Setting-List-Profile-Option {
   display: flex;
   list-style: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: fit-content;
   margin-bottom: 0.5rem;
   gap: 4.75rem;
 }
 
 .Setting-Option-List {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   display: flex;
   justify-content: center;
   width: 7.125rem;
+  cursor: pointer;
 }
+
 .SettingBlue-NavLine {
   width: 7.125rem;
   height: 3px;
@@ -48,12 +50,12 @@
 /* .......css for middle container........... */
 
 .Setting-Middle-Container-Heading {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
 }
 
 .Setting-Profile-Image {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 8.25rem;
   height: 8.125rem;
   margin-right: 3.3125rem;
@@ -70,6 +72,7 @@
   position: absolute;
   bottom: 7px;
   right: 0;
+  cursor: pointer;
 }
 
 /* .User-details-Main-container {
@@ -77,51 +80,81 @@
 } */
 
 .Setting-Form-Container {
-  border: 3px solid red;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-}
-
-/* .Setting-Form-Container {
-  border: 3px solid red;
-  height: fit-content;
-  display: flex;
+  /* border: 1px solid red; */
   width: 100%;
-  gap: 1.8125rem;
-  /* justify-content: space-around; */
-
-/* .User-Name-container {
-  border: 2px solid blue;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.8125rem;
+  row-gap: 1.375rem;
+  grid-auto-rows: 80px;
 }
- */
 
-.User-name {
-  border: 2px solid green;
-  /* width: 26.125rem; */
-  height: 5rem;
+.Container1 {
+  /* background-color: lightcyan; */
+  /* height: 80px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.InputSize {
-  width: 100%;
-  /* width: 26.125rem; */
-  height: 3.125rem;
-  border-radius: 0.9375rem;
-  border-color: #dfeaf2;
-  border-style: none;
-  padding: 0px 1.25rem;
+.YourName {
+  color: black;
 }
 
-.InputSize::placeholder {
+.WriteYourName {
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+
+.InputName {
+  border: 1px solid #dfeaf2;
+  width: 100%;
+  height: 3.125rem;
+  border-radius: 0.9375rem;
+  /* border-color: #dfeaf2; */
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.InputName::placeholder {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: #718ebf;
 }
 
-.InputSize:focus {
+.InputName:focus {
   outline: none;
+}
+
+/* .InputName::-webkit-calendar-picker-indicator {
+  display: none;
+} */
+
+.Btn-Container {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: end;
+}
+
+.SaveBtn {
+  width: 11.875rem;
+  height: 50px;
+  border-radius: 0.9375rem;
+  background-color: #1814f3;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.SaveBtn:hover {
+  color: white;
+  cursor: pointer;
 }
