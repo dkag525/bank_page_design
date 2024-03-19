@@ -1,11 +1,11 @@
 .Services-Page-Top-Container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 .ServicesType-Container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background-color: white;
   border-radius: 1.5625rem;
   height: 120px;
@@ -13,19 +13,19 @@
   align-items: center;
   display: flex;
 }
-.ServicesName-Body {
+/* .ServicesName-Body {
   border: 1px solid green;
-}
+} */
 
 /* .............Middle Container.......... */
 
-.Services-Page-Middle-Container {
+/* .Services-Page-Middle-Container {
   border: 1px solid red;
-}
+} */
 
-.Services-Page-Container {
-  /* border: 2px solid green; */
-}
+/* .Services-Page-Container {
+  border: 2px solid green;
+} */
 
 .bank-services-list-container {
   /* border: 3px solid blue; */

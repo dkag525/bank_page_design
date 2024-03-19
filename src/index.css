@@ -110,6 +110,12 @@ body {
   font-weight: 500;
   font-size: 0.9375rem;
 }
+.font-weight-500-17px {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  color: #333b69;
+}
 
 .font-weight-400-16px {
   font-family: "Inter", sans-serif;

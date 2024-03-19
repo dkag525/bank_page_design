@@ -1,0 +1,79 @@
+.Preference-container-top-section {
+  /* border: 1px solid red; */
+  margin-bottom: 1.6875rem;
+}
+
+.Preference-top-body {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.8125rem;
+  grid-auto-rows: 80px;
+}
+
+.Pre-container {
+  /* background-color: lightcoral; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Currency {
+  color: black;
+}
+
+/* .Inputput-box {
+  border: 1px solid red;
+} */
+
+/* .Notification {
+  border: 1px solid blue;
+} */
+/* .Notification-Setting-body {
+  border: 1px solid green;
+} */
+
+.Notification-Setting {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 0.9556rem;
+  color: black;
+  align-items: center;
+}
+
+.toggle {
+  /* border: 1px solid blue; */
+  display: flex;
+}
+
+.Switch {
+  width: 3.5rem;
+  height: 30.71px;
+  border-radius: 1.5625rem;
+  /* border: 1px solid red; */
+  position: relative;
+  /* background-color: cadetblue; */
+  display: flex;
+  align-items: center;
+  /* transition: all 500ms ease-in-out; */
+}
+
+.Switchbtn {
+  position: absolute;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  background-color: white;
+  border-radius: 50%;
+  /* transition: all 500ms ease-in-out; */
+}
+
+.Switchbtntoggle {
+  position: absolute;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  background-color: white;
+  border-radius: 50%;
+  right: 0;
+  /* transition: all 500ms ease-in-out; */
+}
