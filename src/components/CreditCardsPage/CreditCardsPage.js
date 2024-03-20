@@ -248,7 +248,6 @@ const CreditCardsPage = () => {
                 }
                 return bgColor;
               };
-
               return (
                 <div className="Card-List-Body">
                   <table className="Card-table-data">

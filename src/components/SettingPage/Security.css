@@ -1,0 +1,76 @@
+.Security-container-top-section{
+    /* border: 1px solid red; */
+}
+
+.Authentication-Setting{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.Switchs{
+    /* border: 1px solid blue; */
+    background-color:  #16DBCC;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 3.5rem;
+    height: 30.71px;
+    border-radius: 1.5625rem;
+}
+
+.SwitchbtnsLeft {
+    position: absolute;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    background-color: white;
+    border-radius: 50%;
+    left: 0;
+    /* transition: all 500ms ease-in-out; */
+  }
+.SwitchbtnsRight {
+    position: absolute;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    background-color: white;
+    border-radius: 50%;
+    Right: 0;
+    /* transition: all 500ms ease-in-out; */
+  }
+  
+
+
+.Current-Password-body{
+    /* border: 1px solid red; */
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+  .Change-Password{
+    /* border: 1px solid blue; */
+    margin-bottom: 1rem;
+  }
+
+  .InputPassword{
+    height: 3.125rem;
+    border-radius: .9375rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DFEAF2;
+  }
+
+  .InputPassword:focus{
+    outline: none;
+
+  }
+  
+  .InputPassword::placeholder{
+    color:#718EBF;
+    align-items: center;
+    display: flex;
+  }

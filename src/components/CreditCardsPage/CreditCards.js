@@ -7,28 +7,28 @@ const CreditCards = ({ atmcarddetails }) => {
   return (
     <>
       {atmcarddetails.map((el, i) => {
-        let backgroundColor, Color;
+        // let backgroundColor, Color;
 
-        if (i === 1) {
-          backgroundColor = "linear-gradient(180deg, #4C49ED 0%, #0A06F4 100%)";
-          Color = "white";
-        } else if (i === 2) {
-          backgroundColor = "white";
-          Color = "black";
-        } else {
-          backgroundColor = "";
-          Color = "";
-        }
+        // if (i === 1) {
+        //   backgroundColor = "linear-gradient(180deg, #4C49ED 0%, #0A06F4 100%)";
+        //   Color = "white";
+        // } else if (i === 2) {
+        //   backgroundColor = "white";
+        //   Color = "black";
+        // } else {
+        //   backgroundColor = "";
+        //   Color = "";
+        // }
 
-        const style = {
-          background: backgroundColor,
-          color: Color,
-        };
+        // const style = {
+        //   background: backgroundColor,
+        //   color: Color,
+        // };
 
         return (
           <div key={i} className="CreditCard-body whiteColor ">
             <div
-              style={{ background: style.background, color: style.color }}
+              // style={{ background: style.background, color: style.color }}
               className="CreditCard-User-Details-Sec linearGradientBlue"
             >
               <div className="cc-balance-container">
